@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+body {
+    background-color: #111214;
+}
+
+.margin {
+    width: 1280px;
+    max-width: 75%;
+    height: 100%;
+
+    position: relative;
+    left: 50%; transform: translateX(-50%);
+}

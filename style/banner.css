@@ -1,0 +1,305 @@
+
+
+#banner {
+    width: 100%;
+}
+#banner > .margin {
+    width: 75%;
+    background-color: #16181a;
+    aspect-ratio: 10/4.2;
+}
+
+
+#banner-left-text {
+    width: 12.5%;
+    aspect-ratio: 10/25.2;
+    position: absolute;
+    overflow: hidden;
+}
+#banner-left-text > .text {
+    transform: translate(0.5vw, 0.25vw);
+    opacity: 0.5;
+}
+#banner-left-text > .text > div {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13vw;
+    line-height: 11vw;
+    transform: scaleX(85%);
+    color: transparent;
+    transform-origin: 0% 50%;
+    -webkit-text-stroke: 0.1vw white;
+    user-select: none;
+}
+#banner-left-text > .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #11121400, #111214ff);
+}
+
+#banner-right-shapes {
+    width: 12.5%;
+    aspect-ratio: 10/25.2;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+#banner-right-shapes div {
+    box-sizing: border-box;
+}
+#banner-right-shapes .line {
+    position: absolute;
+    width: 0.1vw;
+    height: 100%;
+    background-color: white;
+    left: 50%; transform: translateX(-50%);
+
+    opacity: 0.5;
+    animation-name: banner-right-shapes-load2;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+}
+@keyframes banner-right-shapes-load2 {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-100%);
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateX(-50%) translateY(0%);
+    }
+}
+#banner-right-shapes .diag {
+    position: absolute;
+    width: calc(50% * 1.5);
+    aspect-ratio: 1;
+    border-left: 0.15vw solid white;
+    transform: rotateZ(45deg);
+    transform-origin: 0% 100%;
+    left: 50%;
+
+    opacity: 0.5;
+    animation-name: banner-right-shapes-load;
+    animation-duration: 0.25s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+#banner-right-shapes .diag2 {
+    position: absolute;
+    width: calc(50% * 1.5);
+    aspect-ratio: 1;
+    border-right: 0.15vw solid white;
+    transform: rotateZ(45deg);
+    transform-origin: 100% 0%;
+    right: 50%;
+
+    opacity: 0.5;
+    animation-name: banner-right-shapes-load;
+    animation-duration: 0.5s;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+}
+#banner-right-shapes > .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to left, #111214ff, #11121400, #111214ff);
+}
+
+@keyframes banner-right-shapes-load {
+    0% {
+        opacity: 0;
+        transform: rotateZ(45deg) scaleY(0%);
+    }
+    100% {
+        opacity: 0.5;
+        transform: rotateZ(45deg) scaleY(100%);
+    }
+}
+
+
+#banner-content {
+    width: 100%; height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#banner-content > .text {
+    transform: translate(0.5vw, 0.25vw);
+    position: absolute;
+}
+#banner-content > .text > div {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13vw;
+    line-height: 11vw;
+    transform: scaleX(85%);
+    transform-origin: 0% 50%;
+    user-select: none;
+}
+
+@keyframes banner-text-line-load {
+    0% {
+        opacity: 0;
+        transform: scaleX(50%) translateX(-7.5vw);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleX(85%) translateX(0vw);
+    }
+}
+
+#banner .text > div {
+    animation-name: banner-text-line-load;
+    animation-duration: 0.25s;
+    animation-fill-mode: backwards;
+}
+#banner .text > .line1 { animation-delay: 0.15s; }
+#banner .text > .line2 { animation-delay: 0.30s; }
+#banner .text > .line3 { animation-delay: 0.45s; }
+#banner .text > .line4 { animation-delay: 0.60s; }
+
+#banner-content > .code-animation {
+    position: absolute;
+    width: 100%;
+    height: 35vw;
+    transform: rotateZ(-45deg);
+    transform-origin: 77% 0%;
+
+    user-select: none;
+    
+    animation-name: banner-code-animation-load;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+@keyframes banner-code-animation-load {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#banner-content > .code-animation > .anim-content {
+    position: absolute;
+    top: 0; left: -100%;
+    width: 200%; height: 100%;
+    
+    opacity: 0.5;
+}
+#banner-content > .code-animation > .anim-content > pre,
+#banner-content > .code-animation > .anim-content > pre code {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 1vw;
+    line-height: 1.4vw;
+    padding: 0;
+    background-color: transparent;
+}
+#banner-content > .code-animation > .anim-content > pre code {
+    animation-name: banner-code-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes banner-code-animation {
+    0% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    5% {
+        opacity: 1;
+        transform: translateX(2.5%);
+    }
+    95% {
+        opacity: 1;
+        transform: translateX(47.5%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+}
+#banner-content > .center-block {
+    position: absolute;
+    right: 27.5vw;
+    width: 24vw;
+    height: 4vw;
+    top: 50%;
+    transform: translate(50%, -50%);
+
+    line-height: 4vw;
+    font-size: 2vw;
+    text-align: center;
+
+    background-color: #1d1f21;
+
+    border: 0.3vw solid #16181a;
+    outline: 0.15vw solid rgba(255, 255, 255, 0.5);
+
+    user-select: none;
+    
+    animation-name: banner-center-block-load1;
+    animation-duration: 0.5s;
+    animation-delay: 0.25s;
+    animation-fill-mode: backwards;
+}
+@keyframes banner-center-block-load1 {
+    0% {
+        opacity: 0;
+        transform: translate(50%, -50%) translateX(-3vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(50%, -50%) translateX(0vw);
+    }
+}
+
+#banner-content > .center-block-button {
+    position: absolute;
+    right: 27.5vw;
+    width: 15vw;
+    height: 1.65vw;
+    top: 50%;
+    transform: translate(50%, -50%) translateY(4.5vw);
+
+    line-height: 1.65vw;
+    font-size: 1.15vw;
+    text-align: center;
+
+    background-color: #1d1f21;
+
+    border: 0.3vw solid #16181a;
+    outline: 0.15vw solid rgba(255, 255, 255, 0.25);
+
+    user-select: none;
+
+    transition-duration: 0.05s;
+    transition-timing-function: linear;
+    
+    animation-name: banner-center-block-load2;
+    animation-duration: 0.5s;
+    animation-delay: 0.375s;
+    animation-fill-mode: backwards;
+}
+#banner-content > .center-block-button:hover {
+
+    border: 0.4vw solid #16181a;
+    outline: 0.15vw solid rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+}
+@keyframes banner-center-block-load2 {
+    0% {
+        opacity: 0;
+        transform: translate(50%, -50%) translateY(4.5vw) translateX(-3vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(50%, -50%) translateY(4.5vw) translateX(0vw);
+    }
+}
