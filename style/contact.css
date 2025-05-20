@@ -66,8 +66,8 @@
     position: relative;
     padding: 4px 10px;
     border-radius: 12px;
-    background: linear-gradient(to right, #DCE35B, #45B649);
-    color: var(--gray4);
+    background: #007ffe22;
+    color: white;
 
     border: 4px solid var(--gray2);
     outline: 1px solid transparent;
@@ -78,6 +78,7 @@
 }
 #contact > .margin > .content > .discord > a:hover > .text {
     outline: 1px solid #007ffeff;
+    background: #007ffe44;
 }
 
 @media only screen and (max-width: 400px) {
