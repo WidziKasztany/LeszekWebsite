@@ -1,0 +1,91 @@
+#products {
+
+}
+#products .margin {
+    background-color: var(--gray2);
+}
+#products .margin > .content {
+    padding: 20px 20px;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#products .product {
+    margin: 20px 30px;
+    width: 320px;
+    height: 260px;
+    position: relative;
+}
+
+#products .product > .shape {
+    position: absolute;
+    inset: var(--offset);
+
+    background-color: var(--gray3);
+    clip-path: polygon(
+        var(--offset) var(--offset), 
+        calc(100% - var(--offset)) var(--offset), 
+        calc(100% - var(--offset)) calc(100% - 40px), 
+        calc(100% - 40px) calc(100% - var(--offset)), 
+        var(--offset) calc(100% - var(--offset))
+    );
+}
+#products .product > .shape1 {
+    --offset: 0px;
+    background-color: var(--gray3);
+}
+#products .product > .shape2 {
+    --offset: 2px;
+    background-color: var(--gray1);
+}
+#products .product > .shape3 {
+    --offset: 5px;
+    background-color: var(--gray2);
+}
+#products .product > .content {
+    position: absolute;
+    inset: 20px;
+}
+#products .product > .content > h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+#products .product > .content > .img {
+    width: calc(100% + 20px);
+    transform: translateX(-10px);
+    height: 100px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#products .product > .content > p {
+    font-size: 16px;
+    margin-top: 8px;
+}
+#products .product > .content > p > a {
+    color: lightgray;
+    transition-duration: 0.125s;
+}
+#products .product > .content > p > a:hover {
+    color: white;
+}
+
+
+@media only screen and (max-width: 460px) {
+    #products .margin > .content {
+        display: block;
+        justify-content: unset;
+    }
+    #products .product {
+        margin: 20px 0px;
+        width: calc(100% - 50px);
+        height: max-content;
+        padding-bottom: 40px;
+    }
+    #products .product > .content {
+        position: relative;
+        width: calc(100% - 40px);
+    }
+}

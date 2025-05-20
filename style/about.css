@@ -1,0 +1,214 @@
+#about > .margin {
+    position: relative;
+    background-color: var(--gray2);
+}
+
+#about > .margin > .left {
+    position: relative;
+    width: calc(100% - 250px);
+}
+#about > .margin > .left > .content,
+#about > .margin > .right > .content {
+    padding: 20px;
+    width: auto;
+}
+#about > .margin > .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+}
+#about > .margin > .right > .content {
+    transition-duration: 0.01s;
+}
+
+#about > .margin > .left h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    display: inline-flex;
+}
+#about > .margin > .left h1 > span {
+    position: relative;
+    top: 4px;
+    margin-right: 8px;
+    display: block;
+    height: 32px;
+    aspect-ratio: 1;
+
+    background-image: url("./../images/aboutarrow.svg");
+    background-size: cover;
+    background-position: center;
+}
+#about > .margin > .left hr {
+    border: 1px solid var(--gray4);
+    margin: 10px 0;
+}
+#about > .margin > .left p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: lightgray;
+}
+
+#about > .margin > .left .programs {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: calc(100%);
+}
+
+#about > .margin > .left .programs > .content {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+#about > .margin > .left .programs > .content > .tech {
+    position: relative;
+    width: 160px;
+    height: 80px;
+    background-color: var(--gray2);
+
+    outline: 8px solid var(--gray1);
+    margin-left: 8px;
+    margin-top: 8px;
+
+    transition-duration: 0.25s;
+}
+#about > .margin > .left .programs > .content > .tech > .img {
+    margin-top: 10px;
+    margin-left: 10px;
+
+    width: calc(100% - 20px);
+    height: 60px;
+    position: relative;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    filter: grayscale(0.5) contrast(1);
+    opacity: 0.75;
+
+    z-index: 3;
+    transition-duration: 0.25s;
+}
+#about > .margin > .left .programs > .content > .tech > h1 {
+    position: absolute;
+    display: block;
+
+    top: 100%;
+    width: 100%;
+    height: 30px;
+    line-height: 20px;
+    background-color: var(--gray2);
+    color: var(--gray2);
+
+    user-select: none;
+    text-align: center;
+    font-size: 16px;
+
+    transform: translateY(-10px) translateY(-100%);
+
+    z-index: 1;
+    transition-duration: 0.25s;
+}
+#about > .margin > .left .programs > .content > .tech:hover {
+    background-color: var(--gray3);
+    z-index: 1000;
+}
+#about > .margin > .left .programs > .content > .tech:hover > h1 {
+    background-color: var(--gray3);
+    transform: translateY(-10px) translateY(0%);
+    color: white;
+}
+#about > .margin > .left .programs > .content > .tech:hover > .img {
+    filter: grayscale(0) contrast(1.25);
+    opacity: 1;
+}
+#about > .margin > .left .programs > .content > .tech > .border {
+    position: absolute;
+    z-index: 4;
+    inset: 0;
+
+    outline: 1px solid transparent;
+    transition-duration: 0.25s;
+}
+#about > .margin > .left .programs > .content > .tech:hover > .border {
+    bottom: -30px;
+    outline: 1px solid gray;
+}
+
+#about > .margin > .right > .content > a {
+    position: relative;
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px 0 10px 15px;
+    text-decoration: none;
+    margin: 10px 0px;
+    font-size: 16px;
+    transition-duration: 0.25s;
+}
+#about > .margin > .right > .content > a::before {
+    display: block;
+    content: '';
+
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 0%;
+    opacity: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0% 100%);
+    transition-duration: 0.25s;
+}
+#about > .margin > .right > .content > a:hover:before {
+    width: 100%;
+    opacity: 1;
+}
+
+#about > .margin > .right > .content > a > .rect {
+    --offset: 0px;
+    position: absolute;
+    inset: calc(var(--offset) * -1);
+    
+    background-color: var(--gray1);
+
+    clip-path: polygon(
+        calc(var(--offset) * -1) calc(var(--offset) * -1), 
+        calc(100% + var(--offset)) calc(var(--offset) * -1), 
+        calc(100% + var(--offset)) calc(100% - 20px - var(--offset) * 1.5), 
+        calc(100% - 20px - var(--offset) * 1.5) calc(100% + var(--offset)), 
+        calc(var(--offset) * -1) calc(100% + var(--offset))
+        );
+    z-index: -1;
+}
+#about > .margin > .right > .content > a > .g2rect {
+    --offset: 5px;
+    background-color: var(--gray2);
+    z-index: -2;
+}
+#about > .margin > .right > .content > a > .rrect {
+    --offset: 7px;
+    background-color: #0180ff;
+    z-index: -3;
+
+    transform: scaleX(0%);
+    transition-duration: 0.25s;
+}
+#about > .margin > .right > .content > a.active > .rrect {
+    transform: scaleX(100%);
+}
+
+#about > .margin > .right > .content > a.active {
+    margin: 20px 0px;
+}
+
+
+@media only screen and (max-width: 640px) {
+    #about > .margin > .left {
+        width: 100%;
+    }
+    #about > .margin > .right {
+        display: none;
+        width: 0px;
+    }
+}

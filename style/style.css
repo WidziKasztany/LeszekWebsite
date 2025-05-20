@@ -8,12 +8,22 @@
     font-weight: 300;
     font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+:root {
+    --gray1: #111214;
+    --gray2: #16181a;
+    --gray3: #1d1f21;
+    --gray4: #363b3f;
+}
 body {
-    background-color: #111214;
+    background-color: var(--gray1);
 }
 
 .margin {
-    width: 1280px;
+    min-width: min(640px, 100%);
+    width: 1920px;
     max-width: 75%;
     height: 100%;
 

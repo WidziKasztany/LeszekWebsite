@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="aboutarrow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0467522"
+     inkscape:cx="396.94207"
+     inkscape:cy="331.97923"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="rect1"
+       style="fill:#0180ff;stroke-width:0.203196;fill-opacity:0.49799198"
+       d="M 7.9012076 79.051175 L -62.369954 79.05154 L -62.369954 94.853955 L -62.37032 149.3227 L -46.567174 149.3227 L -46.567539 94.853955 L 7.901573 94.853955 L 7.9012076 79.051175 z M 62.369954 133.51992 L 7.901573 133.51992 L -7.901573 133.51992 L -7.9012076 149.3227 L -7.901573 203.79145 L 7.901573 203.79145 L 7.901573 149.32307 L 62.37032 149.3227 L 62.369954 133.51992 z "
+       transform="rotate(-45)" />
+    <path
+       id="rect3"
+       style="fill:#0180ff;stroke-width:0.203196;fill-opacity:1"
+       transform="rotate(135)"
+       d="M -7.9013228,-149.32268 H 62.370024 v 15.80265 H -7.9013228 Z" />
+    <path
+       id="rect4"
+       style="fill:#0180ff;stroke-width:0.203196;fill-opacity:1"
+       transform="rotate(-135)"
+       d="m -149.32268,-7.9013252 h 70.271349 V 7.9013233 h -70.271349 z" />
+    <path
+       id="rect7"
+       style="fill:#0180ff;stroke-width:0.203196;fill-opacity:1"
+       transform="rotate(135)"
+       d="M -62.370026,-203.79138 H 7.9013214 v 15.80265 H -62.370026 Z" />
+    <path
+       id="rect8"
+       style="fill:#0180ff;stroke-width:0.203196;fill-opacity:1"
+       transform="rotate(-135)"
+       d="m -203.79138,46.567375 h 70.27135 v 15.802649 h -70.27135 z" />
+  </g>
+</svg>

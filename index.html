@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leszek Website</title>
+    
+    <link rel="shortcut icon" href="images/icon.webp" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +19,47 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/javascript.min.js"></script>
       <!-- hljs Theme -->
       <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/github-dark.min.css"/>
-
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/banner.css">
     <script>hljs.highlightAll();</script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/banner.css">
+    <link rel="stylesheet" href="style/sectionheader.css">
+    <link rel="stylesheet" href="style/products.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
+    <div id="-top"></div>
+    <div style="height: 60px"></div>
+    
+    <div id="headershadow">
+        <div class="shape"></div>
+    </div>
+    <div id="header">
+        <div class="cut"></div>
+        <div class="margin">
+            <div class="left">
+                <a href="#-top">Leszek.wtf</a>
+            </div>
+            <div class="right">
+                <a href="#-top" class="websitename">Leszek.wtf</a>
+                <a href="#-products">Products</a>
+                <a href="#-about">About</a>
+                <a href="#-contact">Contact</a>
+                <a href="http://panel.leszk.wtf/" target="_blank" class="openpanel" style="margin-right: 0">
+                    <div class="cut cut1"></div>
+                    <div class="cut cut2"></div>
+                    <div class="hoveranim" style="transition-delay: 0s;"></div>
+                    <h1>Open Panel</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+    
     <div id="banner">
         <div id="banner-left-text">
             <div class="text">
@@ -43,7 +80,7 @@
 
             <div class="gradient-overlay"></div>
         </div>
-        <div class="margin">
+        <div class="margin" style="min-width: 0px;">
             <div id="banner-content">
                 <div class="text">
                     <div class="line2">TOP</div>
@@ -93,10 +130,322 @@
                 <div class="center-block">
                     Leszek.wtf
                 </div>
-                <div class="center-block-button">
+                <a href="#-products" class="center-block-button" style="text-decoration: none;">
                     See available products
+                </a>
+                <div class="shadow"></div>
+                <div class="shadow2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="-products" style="transform: translateY(-60px)"></div>
+    <div class="sectionheader">
+        <div class="cut cut1"></div>
+        <div class="cut cut2"></div>
+        <h1>Products</h1>
+    </div>
+
+    <div id="products">
+        <div class="margin">
+            <div class="content">
+                <div class="product">
+                    <div class="shape shape1"></div>
+                    <div class="shape shape2"></div>
+                    <div class="shape shape3"></div>
+                    <div class="content">
+                        <h1>SharpMacro <span style="font-size: 14px; color: gray">Discontinued</span></h1>
+                        <div class="img" style="background-image: url('./images/sharpmacro.svg');"></div>
+                        <p><span style="color: gray">Script Creating & Task Automating software for Video Games with bunch of ready, cutting-edge scripts built-in</span> <a href="articles/sharpmacro/" target="_blank">Learn more...</a></p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div id="-about" style="transform: translateY(-60px)"></div>
+    <div class="sectionheader">
+        <div class="cut cut1"></div>
+        <div class="cut cut2"></div>
+        <h1>About</h1>
+    </div>
+    
+
+    <div id="about">
+        <div class="margin">
+            <div class="left">
+                <div class="content">
+                    <div id="-about-about" style="transform: translateY(-60px)"></div>
+                    <h1><span style="background-image: url('./images/aboutarrow.svg');"></span>About Me</h1>
+                    <hr>
+                    <p>I'm programming mainly 4fun. Most of my projects are private and are made only because of my curiosity or because I want to make something cool.</p>
+                    
+                    <div id="-about-languages" style="transform: translateY(-60px)"></div>
+                    <h1><span style="background-image: url('./images/aboutarrow.svg'); filter: hue-rotate(60deg)"></span>Programming Languages</h1>
+                    <hr>
+                    <p>After lots of attempts at many different things I picked up many languages where I still to this day find myself using many of them in my projects. Some of them (ordered from most to least experience):</p>
+                    <div class="programs">
+                        <div class="content">
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/c++.png');"></div>
+                                <div class="border"></div>
+                                <h1>C++ (Advanced)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/java.png');"></div>
+                                <div class="border"></div>
+                                <h1>Java (Advanced)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/js.png');"></div>
+                                <div class="border"></div>
+                                <h1>JS (Node & Web)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/typescript.png');"></div>
+                                <div class="border"></div>
+                                <h1>TypeScript</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/kotlin.png');"></div>
+                                <div class="border"></div>
+                                <h1>Kotlin (Basics)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/csharp.avif');"></div>
+                                <div class="border"></div>
+                                <h1>C# (Basics)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/php.png');"></div>
+                                <div class="border"></div>
+                                <h1>PHP (Basics)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/python.webp');"></div>
+                                <div class="border"></div>
+                                <h1>Python (Basics)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/dart.png');"></div>
+                                <div class="border"></div>
+                                <h1>Dart (Basics)</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="-about-libs" style="transform: translateY(-60px)"></div>
+                    <h1><span style="background-image: url('./images/aboutarrow.svg'); filter: hue-rotate(120deg)"></span>Technologies & Libraries</h1>
+                    <hr>
+                    <p>Other than programming languages mentioned above, I'm also knowledgeable with technologies and libraries mentioned below (ordered from most to least experience):</p>
+                    <div class="programs">
+                        <div class="content">
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/imgui.png');"></div>
+                                <div class="border"></div>
+                                <h1>Dear ImGui (C++)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/css.webp');"></div>
+                                <div class="border"></div>
+                                <h1>CSS</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/html.png');"></div>
+                                <div class="border"></div>
+                                <h1>HTML</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/expressjs.png');"></div>
+                                <div class="border"></div>
+                                <h1>Express.js</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/react.svg');"></div>
+                                <div class="border"></div>
+                                <h1>React.js</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/nodejs.png');"></div>
+                                <div class="border"></div>
+                                <h1>Node.js</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/paperspigot.webp');"></div>
+                                <div class="border"></div>
+                                <h1>PaperSpigot (MC)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/multipaper.png');"></div>
+                                <div class="border"></div>
+                                <h1>MultiPaper (MC)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/github.png');"></div>
+                                <div class="border"></div>
+                                <h1>GitHub</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/mongodb.svg');"></div>
+                                <div class="border"></div>
+                                <h1>Mongodb</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/discordjs.png');"></div>
+                                <div class="border"></div>
+                                <h1>Discord.js</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/flutter.webp');"></div>
+                                <div class="border"></div>
+                                <h1>Flutter (Basics)</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/androidstudio.png');"></div>
+                                <div class="border"></div>
+                                <h1>Android Studio</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/mysql.avif');"></div>
+                                <div class="border"></div>
+                                <h1>MySQL (Basics)</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="-about-programs" style="transform: translateY(-60px)"></div>
+                    <h1><span style="background-image: url('./images/aboutarrow.svg'); filter: hue-rotate(180deg)"></span>Other Programs</h1>
+                    <hr>
+                    <p>Those are programs that I'm familiar with and that I mostly use when I'm making new projects:</p>
+                    <div class="programs">
+                        <div class="content">
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/visualstudio.png');"></div>
+                                <div class="border"></div>
+                                <h1>Visual Studio</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/vscode.png');"></div>
+                                <div class="border"></div>
+                                <h1>VS Code</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/intellij.png');"></div>
+                                <div class="border"></div>
+                                <h1>IntelliJ IDEA</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/inkscape.png');"></div>
+                                <div class="border"></div>
+                                <h1>Inkscape</h1>
+                            </div>
+                            <div class="tech">
+                                <div class="img" style="background-image: url('./images/icons/gimp.png');"></div>
+                                <div class="border"></div>
+                                <h1>GIMP</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="content" id="about-legend">
+                    <div style="height: 15px"></div>
+
+                    <a href="#-about-about" class="active">
+                        <div class="rrect rect"></div>
+                        <div class="g2rect rect"></div>
+                        <div class="g1rect rect"></div>
+                        About Me
+                    </a>
+                    <a href="#-about-languages">
+                        <div class="rrect rect" style="filter: hue-rotate(60deg)"></div>
+                        <div class="g2rect rect"></div>
+                        <div class="g1rect rect"></div>
+                        Languages
+                    </a>
+                    <a href="#-about-libs">
+                        <div class="rrect rect" style="filter: hue-rotate(120deg)"></div>
+                        <div class="g2rect rect"></div>
+                        <div class="g1rect rect"></div>
+                        Technologies
+                    </a>
+                    <a href="#-about-programs">
+                        <div class="rrect rect" style="filter: hue-rotate(180deg)"></div>
+                        <div class="g2rect rect"></div>
+                        <div class="g1rect rect"></div>
+                        Programs
+                    </a>
+                </div>
+            </div>
+            <script>
+                document.addEventListener("scroll", e => {
+                    const rect = document.querySelector("#about").getBoundingClientRect();
+                    const aboutlegend = document.querySelector("#about-legend");
+
+                    const minY = -rect.height + aboutlegend.getBoundingClientRect().height - 8;
+                    const y = Math.max(minY, rect.y - 60);
+
+                    if(y < 0) {
+                        aboutlegend.style.transform = `translateY(${-y}px)`;
+                    }
+                    else {
+                        aboutlegend.style.transform = `translateY(0px)`;
+                    }
+
+                    const ids = [
+                        "#-about-about",
+                        "#-about-languages",
+                        "#-about-libs",
+                        "#-about-programs",
+                    ];
+
+                    let active = -1;
+                    for(const id of ids) {
+                        if(document.querySelector(id).getBoundingClientRect().y <= 60) {
+                            active++;
+                        }
+                    }
+                    active = Math.max(active, 0);
+
+                    const anchors = document.querySelectorAll("#about > .margin > .right > .content > a");
+                    anchors.forEach(a => a.classList.remove("active"));
+                    anchors[active].classList.add("active");
+                });
+            </script>
+        </div>
+    </div>
+    
+    <div id="-contact" style="transform: translateY(-60px)"></div>
+    <div class="sectionheader">
+        <div class="cut cut1"></div>
+        <div class="cut cut2"></div>
+        <h1>Contact</h1>
+    </div>
+
+    <div id="contact">
+        <div class="margin">
+            <!--<div class="img"></div>-->
+            <div class="content">
+                <p>Best and fastest way to get in touch with me is through Discord:</p>
+                <div class="discord">
+                    <div class="icon"></div>
+                    <h1>Leszek.wtf - Discord</h1>
+                    <a href="https://discord.gg/5hku2YdAgh" target="_blank">
+                        <div class="text">Join Server</div>
+                    </a>
+                </div>
+                <p>But you can also contact me through mail (Though it will take longer for me to respond): sharpmacropl@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="shadow">
+            <div class="gradient"></div>
+        </div>
+        <div class="margin">
+            <p>&copy; 2025 Lesz3k</p>
         </div>
     </div>
 </body>

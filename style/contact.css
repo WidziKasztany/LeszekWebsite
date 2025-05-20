@@ -1,0 +1,88 @@
+#contact > .margin {
+    position: relative;
+
+    background-color: var(--gray2);
+}
+#contact > .margin > .content {
+    position: relative;
+    padding: 20px 20px;
+}
+#contact > .margin > .content p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: lightgray;
+}
+#contact > .margin > .content h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+#contact > .margin > .content hr {
+    border: 1px solid var(--gray4);
+    margin: 10px 0;
+}
+#contact > .margin > .content > .discord {
+    position: relative;
+    margin: 20px 0;
+    width: 400px;
+    height: 100px;
+
+    max-width: calc(100% - 20px);
+
+    border: 8px solid var(--gray1);
+    outline: 2px solid #007ffe33;
+    border-radius: 20px;
+}
+#contact > .margin > .content > .discord > .icon {
+    position: absolute;
+    top: 10px; left: 10px;
+    width: 80px; height: 80px;
+    background-image: url("https://cdn.discordapp.com/icons/1215820617773748254/3cc47e784fb39244f58bcc010d5709f8.webp?size=128&quality=lossless");
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+#contact > .margin > .content > .discord > h1 {
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    line-height: 0px;
+    font-size: 24px;
+}
+#contact > .margin > .content > .discord > a {
+    position: absolute;
+    top: 45px;
+    left: 100px;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    border-radius: 5px;
+
+    width: max-content;
+    transition-duration: 0.125s;
+}
+#contact > .margin > .content > .discord > a > .text {
+    display: block;
+    height: 100%;
+    position: relative;
+    padding: 4px 10px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #DCE35B, #45B649);
+    color: var(--gray4);
+
+    border: 4px solid var(--gray2);
+    outline: 1px solid transparent;
+    transition-duration: 0.125s;
+}
+#contact > .margin > .content > .discord > a:hover {
+    /*text-decoration-color: var(--gray4);*/
+}
+#contact > .margin > .content > .discord > a:hover > .text {
+    outline: 1px solid #007ffeff;
+}
+
+@media only screen and (max-width: 400px) {
+    #contact > .margin > .content > .discord > h1 {
+        font-size: 18px;
+        padding-left: 4px;
+    }
+}
